@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&family=Orbitron&family=Prompt&family=Racing+Sans+One&family=Sansita&family=Sintony&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sintony', sans-serif;
+}
+body{
+  background-image: url(/images/background\ image.jpg);
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  max-width: 420px;
+  padding: 15rem 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  /* box-shadow: 5px 5px 0px black; */
+
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -180px;
+  left: -10px;
+}
+
+.search #Search-bar{
+  width: 120px;
+  padding: .1rem .5rem;
+  border: 2px solid white;
+  border-radius: 2px;
+  border: none;
+  position: relative;
+  left: 9px
+}
+
+.search #Search-btn{
+  padding: 17% .2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  padding: .3rem;
+}
+
+button{
+  margin-left:.7rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.weather{
+  display: block;
+  position: relative;
+  top: -2rem;
+  left: -10rem;
+  color: white;
+  margin: 7px;
+  
+}
+
+.city{
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.humidty{
+  font-size: 15px;
+}
