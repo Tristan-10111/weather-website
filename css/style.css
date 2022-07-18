@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
 }
+
+
 body{
   background-image: url(/images/background.jpg);
   width: 100%;
@@ -21,13 +23,14 @@ body{
   max-width: 450px;
   text-align: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .container h1{
   color: white;
   padding: .8rem 1rem;
   font-size: 40px;
+  padding: 2rem;
 }
 
 .container [type="text"]{
@@ -38,6 +41,7 @@ body{
   outline: none;
   text-transform: uppercase;
   margin: 0 50px;
+  padding: 1rem 2rem;
 }
 
 ::placeholder{
@@ -46,7 +50,7 @@ body{
 
 .container [type="submit"]{
   width: 25%;
-  padding: 1% 5%;
+  padding: 3% 5%;
   margin: .3rem 0;
   background-color: transparent;
   color: white;
@@ -56,6 +60,7 @@ body{
   cursor: pointer;
   transition: .5s ease-in-out;
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 .container [type="submit"]:hover{
