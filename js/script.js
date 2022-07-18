@@ -1,10 +1,12 @@
 const inputTxt = document.querySelector('.inputTxt');
-var button = document.querySelector('.btn');
+const button = document.querySelector('.btn');
 const showData = document.querySelector('.showData');
 
 //Get API Key from OpenWeather.org
 const API_Key = "a0e78d3b449db7059df0a38abd3952f8";
 
+
+// Adding eventListener
 button.addEventListener('click', () => {
     const cityInput = inputTxt.value;
     console.log(cityInput);
@@ -13,7 +15,7 @@ button.addEventListener('click', () => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            inputTxt.value = " ";
+            inputTxt.value = " "; // empty string for when you fill in your country an press submit it clears a input so that u can enter a new country
           
             showData.innerHTML = `
                                 <ul>
