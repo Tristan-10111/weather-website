@@ -2,7 +2,7 @@ const inputTxt = document.querySelector('.inputTxt');
 const button = document.querySelector('.btn');
 const showData = document.querySelector('.showData');
 
-//Get API Key from OpenWeather.org
+//Created API Key in OpenWeather.org
 const API_Key = "a0e78d3b449db7059df0a38abd3952f8";
 
 
@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
     console.log(cityInput);
 
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&APPID=${API_Key}`)
-        .then(res => res.json())
+        .then(res => res.json())//res is the 
         .then(data => {
             console.log(data);
             inputTxt.value = " "; // empty string for when you fill in your country an press submit it clears a input so that u can enter a new country
